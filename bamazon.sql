@@ -1,8 +1,7 @@
--- Create a database called 'Bamazon' and switch into it for this activity --
 CREATE DATABASE Bamazon;
 USE Bamazon;
 
--- Create a table called 'products' which will contain the store inventory --
+
 CREATE TABLE products (
 	item_id INTEGER(11) AUTO_INCREMENT NOT NULL,
 	product_name VARCHAR(30) NOT NULL,
@@ -12,7 +11,7 @@ CREATE TABLE products (
 	PRIMARY KEY (item_id)
 );
 
--- Insert data into the 'products' table --
+
 INSERT INTO products (product_name, department_name, price, stock_quantity)
 VALUES  ('Poland Spring Water', 'Grocery', 17.40, 20000),
 		('Nintendo Switch', 'Electronics', 299.99, 25),
